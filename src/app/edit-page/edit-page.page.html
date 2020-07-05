@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Edit
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Tanggal</ion-label>
+    <ion-input type="text" [(ngModel)]="post.title" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Acara</ion-label>
+    <ion-textarea type="text" [(ngModel)]="post.details" required></ion-textarea>
+  </ion-item>
+
+  <ion-button class="ion-padding" color="primary" expand="full" (click)="updatePost(post)">
+    Update
+  </ion-button>
+</ion-content>
